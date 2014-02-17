@@ -12,7 +12,7 @@
   }
 
   $.fn.autoScroller = function(args){
-    var spped = (args["spped"] === void 0)?500:args["spped"],
+    var speed = (args["speed"] === void 0)?500:args["speed"],
         wait = (args["wait"] === void 0)?3000:args["wait"],
         target = (args["target"] === void 0)?"div":args["target"],
         display = (args["display"] === void 0)?5:args["display"]-0;
@@ -42,7 +42,7 @@
       $(".as_wrapper").css('height', _intWrapHeight);
       var scroll = function(){
         top -= calcHeight($contents.eq(pos));
-        $inner.animate({"top": top}, spped, function(){
+        $inner.animate({"top": top}, speed, function(){
           pos++;
           if(maxPos < pos){
             pos = 1;
