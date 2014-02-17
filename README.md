@@ -23,7 +23,7 @@
 
 指定可能なオプションは以下の通りです。  
   wait : スクロールの待ち時間（default:3000）  
-  spped : スクロールのアニメーションスピード（default:500）  
+  speed : スクロールのアニメーションスピード（default:500）  
   target : autoScroller内のスクロールコンテンツのセレクタ（default:div要素を拾います）  
   display : スクロールで表示するコンテンツ数（default:5）  
 
