@@ -1,3 +1,10 @@
+/*!
+ * Auto Scroller
+ *
+ * Rei Matsushita - https://github.com/rei-m/autoScroller/
+ *
+ * Free to use under terms of MIT license
+ */
 (function($){
   function calcHeight($el){
     var _tmpH = $el.css("height");
