@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>auto scroll sample</title>
+</head>
+<style>
+.content {
+	font-size:11px;
+	width:300px;
+}
+.content:nth-child(odd){
+	background-color:#FFEFD5;
+}
+.content:nth-child(even){
+	background-color: #E0FFFF;
+}
+</style>
+</head>
+<body>
+<h1>さんぷる</h1>
+<div id="scroll">
+	<div class="content">
+		いっこめ<br>
+		<br>
+		<br>
+	</div>
+	<div class="content">
+		にこめ<br>
+		<br>
+		<br>
+	</div>
+	<div class="content">
+		さんこめ<br>
+		<br>
+		<br>
+	</div>
+	<div class="content">
+		よんこめ<br>
+		<br>
+		<br>
+	</div>
+
+	<div class="content">
+		ごこめ<br>
+		<br>
+		<br>
+	</div>
+	<div class="content">
+		ろっこめ<br>
+		<br>
+		<br>
+	</div>
+	<div class="content">
+		ななこめ<br>
+		<br>
+		<br>
+	</div>
+	<div class="content">
+		はっこめ<br>
+		<br>
+		<br>
+	</div>
+	<div class="content">
+		きゅうこめ<br>
+		<br>
+		<br>
+	</div>
+	<div class="content">
+		じゅっこめ<br>
+		<br>
+		<br>
+	</div>
+</div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="../dist/autoScroller.min.js"></script>
+<script type="text/javascript">
+	$("#scroll").autoScroller({
+		wait:1000,
+		target:".content",
+		display:5
+	});
+</script>
+</body>
+</html>
