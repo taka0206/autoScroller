@@ -45,8 +45,8 @@
         $inner.animate({"top": top}, speed, function(){
           pos++;
           if(maxPos < pos){
-            pos = 1;
-            top = calcHeight($contents.eq(pos)) * -1;
+            pos = 30;
+            top = calcHeight($contents.eq(pos)) * -30;
             $inner.css("top", top);
           }
           setTimeout(scroll, wait);
