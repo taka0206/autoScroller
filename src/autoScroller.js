@@ -11,6 +11,7 @@
     return (_tmpH.slice(0, -2)-0);
   }
 
+  // TODO:wait timeを3000から5000に変更する
   $.fn.autoScroller = function(args){
     var speed = (args["speed"] === void 0)?500:args["speed"],
         wait = (args["wait"] === void 0)?3000:args["wait"],
